@@ -1,0 +1,8 @@
+table ip netvine-table {
+
+	chain base-rule-chain {
+		type filter hook forward priority filter; policy drop;
+		queue num 0
+	}
+}
+

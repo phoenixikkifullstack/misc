@@ -1,0 +1,85 @@
+Jan 10 11:45:28 ubuntu kernel: [332666.853696] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 11:45:28 ubuntu kernel: [332666.855361] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 11:45:28 ubuntu kernel: [332666.860715] Type(ISA resp)
+Jan 10 11:45:28 ubuntu kernel: [332666.860720] TEST [ 5b 00 34 00 39 00 36 00 39 00 34 00 5d] TEST
+Jan 10 11:45:28 ubuntu kernel: [332666.860721] Try UUID, isGotDynamicPort(1),dynamicPort(49694)
+Jan 10 11:45:28 ubuntu kernel: [332666.860722] nv_nf_conntrack_opc: ===>>>dynamicPort:49694 be found
+Jan 10 11:45:28 ubuntu kernel: [332666.860724] nv_nf_conntrack_opc: conntrack_opc: match `[' (13 bytes at 3779294142)
+Jan 10 11:45:28 ubuntu kernel: [332666.860728] nv_nf_conntrack_opc: nf_ct_expect_related return, ret:1
+Jan 10 11:45:29 ubuntu kernel: [332666.873631] Type(ISA resp)
+Jan 10 11:45:29 ubuntu kernel: [332666.873638] TEST [ 5b 00 34 00 39 00 36 00 39 00 35 00 5d] TEST
+Jan 10 11:45:29 ubuntu kernel: [332666.873639] Try UUID, isGotDynamicPort(1),dynamicPort(49695)
+Jan 10 11:45:29 ubuntu kernel: [332666.873640] nv_nf_conntrack_opc: ===>>>dynamicPort:49695 be found
+Jan 10 11:45:29 ubuntu kernel: [332666.873642] nv_nf_conntrack_opc: conntrack_opc: match `[' (13 bytes at 3779296366)
+Jan 10 11:45:29 ubuntu kernel: [332666.873645] nv_nf_conntrack_opc: nf_ct_expect_related return, ret:1
+
+
+Jan 10 11:51:04 ubuntu kernel: [333002.774437] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 11:51:04 ubuntu kernel: [333002.776278] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 11:51:04 ubuntu kernel: [333002.783042] Type(ISA resp)
+Jan 10 11:51:04 ubuntu kernel: [333002.783057] !!!!!!! dataLen:928, matchOff:568, matchLen:13
+Jan 10 11:51:04 ubuntu kernel: [333002.783065] TEST [ 5b 00 34 00 39 00 36 00 39 00 34 00 5d] TEST
+Jan 10 11:51:04 ubuntu kernel: [333002.783068] Try UUID, isGotDynamicPort(1),dynamicPort(49694)
+Jan 10 11:51:04 ubuntu kernel: [333002.783070] nv_nf_conntrack_opc: ===>>>dynamicPort:49694 be found
+Jan 10 11:51:04 ubuntu kernel: [333002.783073] nv_nf_conntrack_opc: conntrack_opc: match `[' (13 bytes at 1656763763)
+Jan 10 11:51:04 ubuntu kernel: [333002.783078] nv_nf_conntrack_opc: nf_ct_expect_related return, ret:1
+Jan 10 11:51:04 ubuntu kernel: [333002.806012] Type(ISA resp)
+Jan 10 11:51:04 ubuntu kernel: [333002.806017] !!!!!!! dataLen:2272, matchOff:1864, matchLen:13
+Jan 10 11:51:04 ubuntu kernel: [333002.806020] TEST [ 5b 00 34 00 39 00 36 00 39 00 35 00 5d] TEST
+Jan 10 11:51:04 ubuntu kernel: [333002.806022] Try UUID, isGotDynamicPort(1),dynamicPort(49695)
+Jan 10 11:51:04 ubuntu kernel: [333002.806023] nv_nf_conntrack_opc: ===>>>dynamicPort:49695 be found
+Jan 10 11:51:04 ubuntu kernel: [333002.806024] nv_nf_conntrack_opc: conntrack_opc: match `[' (13 bytes at 1656765987)
+Jan 10 11:51:04 ubuntu kernel: [333002.806028] nv_nf_conntrack_opc: nf_ct_expect_related return, ret:1
+
+
+Jan 10 11:59:55 ubuntu kernel: [333533.405518] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 11:59:55 ubuntu kernel: [333533.406173] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 11:59:55 ubuntu kernel: [333533.411585] Type(ISA resp)
+Jan 10 11:59:55 ubuntu kernel: [333533.411589] !!!!!!! dataLen:928, matchOff:568, matchLen:13
+Jan 10 11:59:55 ubuntu kernel: [333533.411597] TEST [ 5b 00 34 00 39 00 36 00 39 00 34 00 5d 00 00 00 07 00 31 00 39 00 32 00 2e 00 31 00 36 00 38 00 2e 00 32 00 30 00 2e 00 38 00 5b 00 34] TEST
+Jan 10 11:59:55 ubuntu kernel: [333533.411598] Try UUID, isGotDynamicPort(1),dynamicPort(49694)
+Jan 10 11:59:55 ubuntu kernel: [333533.411599] nv_nf_conntrack_opc: ===>>>dynamicPort:49694 be found
+Jan 10 11:59:55 ubuntu kernel: [333533.411601] nv_nf_conntrack_opc: conntrack_opc: match `[' (13 bytes at 1208728119)
+Jan 10 11:59:55 ubuntu kernel: [333533.411605] nv_nf_conntrack_opc: nf_ct_expect_related return, ret:1
+Jan 10 11:59:55 ubuntu kernel: [333533.434033] Type(ISA resp)
+Jan 10 11:59:55 ubuntu kernel: [333533.434050] !!!!!!! dataLen:2272, matchOff:1864, matchLen:13
+Jan 10 11:59:55 ubuntu kernel: [333533.434062] TEST [ 5b 00 34 00 39 00 36 00 39 00 35 00 5d 00 00 00 07 00 31 00 39 00 32 00 2e 00 31 00 36 00 38 00 2e 00 32 00 30 00 2e 00 38 00 5b 00 34] TEST
+Jan 10 11:59:55 ubuntu kernel: [333533.434067] Try UUID, isGotDynamicPort(1),dynamicPort(49695)
+Jan 10 11:59:55 ubuntu kernel: [333533.434069] nv_nf_conntrack_opc: ===>>>dynamicPort:49695 be found
+Jan 10 11:59:55 ubuntu kernel: [333533.434071] nv_nf_conntrack_opc: conntrack_opc: match `[' (13 bytes at 1208730343)
+Jan 10 11:59:55 ubuntu kernel: [333533.434076] nv_nf_conntrack_opc: nf_ct_expect_related return, ret:1
+Jan 10 12:00:11 ubuntu kernel: [333549.478976] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:00:11 ubuntu kernel: [333549.480752] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:00:11 ubuntu kernel: [333549.483164] Match dynamic port failed
+Jan 10 12:00:11 ubuntu kernel: [333549.483165] Try IOXID, isGotDynamicPort(0),dynamicPort(0)
+Jan 10 12:00:11 ubuntu kernel: [333549.489041] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:00:11 ubuntu kernel: [333549.490341] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:00:11 ubuntu kernel: [333549.495138] Try IOXID, isGotDynamicPort(0),dynamicPort(0)
+Jan 10 12:01:23 ubuntu kernel: [333621.081514] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:01:23 ubuntu kernel: [333621.082586] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:01:23 ubuntu kernel: [333621.086179] Try IOXID, isGotDynamicPort(0),dynamicPort(0)
+Jan 10 12:02:12 ubuntu kernel: [333670.512903] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:02:12 ubuntu kernel: [333670.514212] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:02:12 ubuntu kernel: [333670.518738] Try IOXID, isGotDynamicPort(0),dynamicPort(0)
+Jan 10 12:04:13 ubuntu kernel: [333791.532138] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:04:13 ubuntu kernel: [333791.534647] nv_nf_conntrack_opc: wrong seq pos (UNSET)(0) or (UNSET)(0)
+Jan 10 12:04:13 ubuntu kernel: [333791.539534] Try IOXID, isGotDynamicPort(0),dynamicPort(0)
+Jan 10 12:06:49 ubuntu kernel: [333947.773831] unregister nf_conntrack_opc
+Jan 10 12:06:51 ubuntu kernel: [333949.862459] register nf_conntrack_opc
+
+石壕吏
+杜甫〔唐代〕
+
+暮投石壕村，有吏夜捉人。
+老翁逾墙走，老妇出门看。
+吏呼一何怒！妇啼一何苦！
+听妇前致词：三男邺城戍。
+一男附书至，二男新战死。
+存者且偷生，死者长已矣！
+室中更无人，惟有乳下孙。
+有孙母未去，出入无完裙。
+老妪力虽衰，请从吏夜归。
+急应河阳役，犹得备晨炊。
+
+夜久语声绝，如闻泣幽咽。
+天明登前途，独与老翁别。

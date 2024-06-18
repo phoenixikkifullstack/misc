@@ -1,0 +1,25 @@
+table ip base-table {
+
+	chain network-attack-chain {
+		type filter hook prerouting priority 0; policy accept;
+		ip protocol icmp ip daddr 255.255.255.255 log prefix "smurf_nftables" drop
+		udp dport { 7, 19 } log prefix "fraggle_nftables" drop
+		ip protocol icmp @nh,160,8 3 log prefix "unrechableCheck_nftables" drop
+		ip protocol icmp @nh,160,8 11 @nh,168,8 { 0, 1 } log prefix "timeoutCheck_nftables" drop
+		ip protocol icmp @nh,160,8 5 @nh,168,8 { 0, 1, 2, 3 } log prefix "redirectCheck_nftables" drop
+		ip protocol icmp ip length 2000 log prefix "icmpLengthCheck_nftables" drop
+		icmp type echo-request limit rate over 1000/second burst 500 packets log prefix "icmpFlood_nftables" drop
+		udp dport 53 limit rate over 1000/second burst 500 packets log prefix "dnsFlood_nftables" drop
+		tcp dport 80 limit rate over 1000/second burst 500 packets log prefix "httpFlood_nftables" drop
+		tcp dport 443 limit rate over 1000/second burst 500 packets log prefix "https flood" drop
+		ip protocol udp limit rate over 1000/second burst 500 packets log prefix "udpFlood_nftables" drop
+	}
+
+	chain connection-manage-chain {
+		type filter hook prerouting priority 0; policy accept; 
+		#限制新建连接数
+		ip daddr 192.168.99.3 ip protocol { tcp, udp }  ct state new limit rate over 5/second drop;
+	 	#ip daddr 192.168.99.1 ip protocol { top, udp } ct state new limit rate over 5/second drop;
+  }
+
+}

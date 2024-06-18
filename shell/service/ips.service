@@ -1,0 +1,12 @@
+[Unit]
+Description=IPS rules management
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash /usr/local/ips/ips.sh load
+ExecReload=/bin/bash /usr/local/ips/ips.sh load
+ExecStop=/bin/bash /usr/local/ips/ips.sh flush
+
+[Install]
+WantedBy=multi-user.target
