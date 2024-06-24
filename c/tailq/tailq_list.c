@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/queue.h>
+// #include <sys/queue.h>
+#include "queue.h"
 #include <sys/time.h>
 
+/*
+    queue.h file get from https://svnweb.freebsd.org/base/head/sys/sys/queue.h
+*/
 struct QUEUE_ITEM{
     int value;  
     TAILQ_ENTRY(QUEUE_ITEM) entries;
@@ -21,7 +25,7 @@ int main(int argc,char **argv){
     
     TAILQ_INIT(&queue_head);
     for(i=1;i<ITEM_NUM;i+=1){
-        item=malloc(sizeof(struct QUEUE_ITEM));
+        item=(struct QUEUE_ITEM *)malloc(sizeof(struct QUEUE_ITEM));
         item->value=i;
         TAILQ_INSERT_TAIL(&queue_head, item, entries);
     }
