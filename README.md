@@ -1,3 +1,3 @@
 # misc
 
-some code fragments.
+some code snippets.
