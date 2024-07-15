@@ -1,7 +1,39 @@
 #include "async_queue.h"
 #include <stdio.h>
 #include <stdlib.h>
+// #include "utarray.h"
+#include "utextend.h"
 
+#if 1
+typedef struct _test_t {
+    UT_array    *tag;
+    // int          k;
+} test_t;
+
+int main(void)
+{
+    test_t *t_list = calloc(1, sizeof(test_t));
+    utarray_new(t_list->tag, &ut_ptr_icd);
+    // TODO
+    for (int i = 0; i < 10; ++i)
+    {
+        int *p = calloc(1, sizeof(int));
+        *p = i * 2 + 1;
+        // utarray_push_back(t_list->tag, &p);
+        utarray_push_back(t_list->tag, p);
+    }
+
+    // utarray_foreach(t_list->tag, int **, p_i)
+    utarray_foreach(t_list->tag, int *, p_i)
+    {
+        // int *p = *p_i;
+        int p = *p_i;
+        printf("==>> i:[%d]\n", p);
+    }
+}
+
+
+#else
 static uint64_t qkey_func(void *e)
 {
     return 0;
@@ -34,3 +66,4 @@ int main(void)
 
     return 0;
 }
+#endif
